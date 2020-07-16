@@ -967,6 +967,10 @@ body {
         margin-bottom: 20px;
     }
 
+    .about__item {
+        width: 68.01%;
+    }
+
     .item__desc {
         padding: 0 10px;
     }
