@@ -171,15 +171,14 @@ body {
 }
 
 .intro .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    display: flex;
 }
 
 .intro__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 52%;
 }
 
 .intro__img {
@@ -934,13 +933,16 @@ body {
     }
 
     .intro .container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .intro__text {
+        width: 100%;
     }
 
     .intro__photo {
         order: -1;
         align-self: center;
-        justify-self: center;
     }
 
     .main__btn {
