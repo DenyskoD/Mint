@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
 
@@ -40,18 +41,18 @@
         </svg>
 
         
-        <header class="header">
+        <header class="header" id="header">
 
             <div class="container">
                 <div class="header__inner">
                     <div class="header__logo">
                         <img src="assets/img/LOGO.png" alt="logo">
                     </div>
-                    <nav class="header__nav">
-                        <a href="#" class="nav__link">Work</a>
-                        <a href="#" class="nav__link">About</a>
-                        <a href="#" class="nav__link">Blog</a>
-                        <a href="#" class="nav__link">Contact</a>
+                    <nav class="header__nav" id="nav">
+                        <a href="#" class="nav__link" data-scroll="#showcase">Work</a>
+                        <a href="#" class="nav__link" data-scroll="#about">About</a>
+                        <a href="#" class="nav__link" data-scroll="#blog">Blog</a>
+                        <a href="#" class="nav__link" data-scroll="#contact">Contact</a>
                         
                     </nav>
 
@@ -67,7 +68,7 @@
         </header>
 
 
-        <section class="section intro">
+        <section class="section intro" id="intro">
             <div class="container">
                 <div class="intro__text">
                     <h1 class="section__title">Hello!!!<br>
@@ -84,7 +85,7 @@
             </div>        
         </section>
 
-        <section class="section showcase">
+        <section class="section showcase" id="showcase">
             <div class="container">
                 <h2 class="section__title  title--showcase">WORK SHOWCASE.</h2>
                 <div class="showcase__nav">
@@ -154,7 +155,7 @@
 
         </section>
 
-        <section class="section partners">
+        <section class="section partners" id="partners">
             <div class="container">
                 <h2 class="visually-hidden">Partners</h2>
                 <div class="partners__inner">
@@ -187,7 +188,7 @@
         </section>
 
 
-        <section class="section about">
+        <section class="section about" id="about">
             <div class="container">
                 <div class="section__text">
                     <h2 class="section__title">
@@ -252,7 +253,7 @@
         </section>
 
 
-        <section class="section blog">
+        <section class="section blog" id="blog">
             <div class="container">
                 <div class="section__text">
                     <h2 class="section__title">
@@ -322,7 +323,7 @@
             </div>
         </section>
 
-        <section class="section contact">
+        <section class="section contact" id="contact">
             <div class="container">
                 <div class="section__text">
                     <h2 class="section__title">
@@ -384,7 +385,7 @@
 
         </section>
 
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__logo">
@@ -392,13 +393,13 @@
                     </div>
                     <copyright class="footer__copyright"> © 2020 - Mint,All Right Reserved</copyright>
                 </div>
-                <div class="footer__scroll">
+                <div class="footer__scroll" id="backToTop" data-scroll="#intro">
                     Back to top<span class="footer__arrow ">arrow</span>
                 </div>
             </div>
         </footer>
-
-
+        <!-- JavaScript -->
+        <script src="assets/js/app.js"></script>
 
     </body>
 </html>

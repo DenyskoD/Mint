@@ -34,7 +34,22 @@ body {
 }
 
 .header {
-    margin-bottom: 150px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header.fixed {
+    height: auto;
+    background-color: #fdfdfd;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.header.fixed .header__logo,
+.header.fixed .header__nav {
+    margin-top: 5px;
 }
 
 .header__inner {
@@ -71,7 +86,7 @@ body {
 /* Burger */
 .burger {
     display: none;
-    margin-top: 19px;
+    margin-top: 1px;
     margin-right: 10px;
     background: none;
     border: 0;
@@ -864,8 +879,29 @@ body {
         margin-bottom: 90px;
     }
 
-    .nav__link {
+    .header__nav {
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1;
+        background-color: #fdfdfd;
+        margin-top: 0 !important;
+        flex-direction: column;
+    }
+
+    .header__nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 7px 15px;
+        margin-left: auto;
+    }
+
+    .nav__link:first-child {
+        margin-left: auto;
     }
 
     .burger {
