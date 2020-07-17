@@ -49,4 +49,18 @@ $(function() {
     });
 
 
+
+    // accordion
+
+    $('#showcaseAccordionInner').slideUp(0);
+
+
+    $('#showcaseAccordion').mouseenter(function() {
+        $('#showcaseAccordionInner').slideToggle();
+    });
+    $('#showcaseAccordion').mouseleave(function() {
+        $('#showcaseAccordionInner').slideToggle();
+    });
+
+
 });

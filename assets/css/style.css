@@ -236,6 +236,26 @@ body {
     outline: none;
 }
 
+.showcase__accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion__outer {
+    line-height: 1.75;
+}
+
+.accordion__inner {
+    position: absolute;
+    margin-top: 3px;
+}
+
+.accordion__inner .showcase__button {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 0 4px;
+}
+
 .accordion__arrow {
     position: absolute;
     bottom: 10px;
