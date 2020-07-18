@@ -1,17 +1,15 @@
 $(function() {
 
-    // fixed header    --> nujno dodelat` , kakou-to bag
+    // fixed header    
     var header = $("#header");
     var intro = $("#intro");
-    var introH = 0;
-    // var introH = intro.innerHeight();
+    var introH = intro.innerHeight();
     var scrollPosition = $(window).scrollTop();
 
     checkScroll(scrollPosition, introH);
 
     $(window).on("scroll", function(){
-        // var introH = intro.innerHeight();
-        var introH = 0;
+        var introH = intro.innerHeight();
         scrollPosition = $(this).scrollTop();
         checkScroll(scrollPosition, introH);
     });
